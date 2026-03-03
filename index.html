@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sviluppatore | [IL TUO NOME]</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container">
+            <!-- SOSTITUISCI CON IL TUO LOGO O LE TUE INIZIALI -->
+            <a href="#" class="logo"><img src="src/logo.png" alt="Logo"></a>
+            <nav class="nav-links">
+                <a href="#about">Chi Sono</a>
+                <a href="#skills">Competenze</a>
+                <a href="#projects">Progetti</a>
+                <a href="#contact">Contatti</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-btn" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h2 class="greeting">Benvenuti nel mio portfolio</h2>
+            <!-- SOSTITUISCI CON IL TUO NOME COMPLETO -->
+            <h1 class="name">Lorenzo Ceccarelli</h1>
+            <!-- SOSTITUISCI CON IL TUO RUOLO (ES. Full Stack Developer) -->
+            <h3 class="role">Student & <span class="gradient-text">High-end developer</span>.</h3>
+
+            <!-- BREVE DESCRIZIONE INTRODUTTIVA -->
+            <p class="bio">
+                Sviluppatore di Perugia e studente di Informatica all'UniPG. Trasformo idee in realtà
+                digitali
+                utilizzando tecnologie web (HTML, CSS, JS) e linguaggi robusti come Java, C, Python e PHP.
+                Punto sempre a scrivere codice pulito e a creare esperienze utente coinvolgenti.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Contattami</a>
+                <!-- Assicurati di rinominare il tuo file CV in "CV_Lorenzo_Ceccarelli.pdf" e inserirlo nella cartella -->
+                <a href="CV_Lorenzo_Ceccarelli.pdf" download="CV_Lorenzo_Ceccarelli.pdf"
+                    class="btn btn-secondary">Scarica CV</a>
+            </div>
+        </div>
+        <!-- Sfondo animato opzionale -->
+        <div class="hero-bg-glow"></div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title">Chi Sono</h2>
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <!-- DETTAGLI SU DI TE -->
+                    <p>La mia passione per la tecnologia, nata da bambino, si è concretizzata studiando all'ITTS
+                        "Alessandro Volta" di Perugia. Durante il percorso, tra progetti scolastici e stage aziendali,
+                        ho imparato ad affrontare sfide reali e a lavorare in team, padroneggiando linguaggi come Java,
+                        C, Python, PHP e lo sviluppo Web.</p>
+                    <p>Oggi, da studente di Informatica all'UniPG, continuo a spingermi oltre per diventare uno
+                        sviluppatore completo e versatile, capace di creare soluzioni software innovative. Sono in
+                        costante ricerca di nuove opportunità per crescere professionalmente e contribuire al mondo
+                        tech.</p>
+                </div>
+                <!-- IMMAGINE PROFILO -->
+                <div class="about-image fade-in delay-1">
+                    <div class="image-wrapper">
+                        <!-- SOSTITUISCI IL SRC CON IL PERCORSO DELLA TUA FOTO -->
+                        <img src="src/pfp.jpg" alt="Foto Profilo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills section alternate-bg" id="skills">
+        <div class="container">
+            <h2 class="section-title">Le mie Competenze</h2>
+            <div class="skills-container fade-in">
+
+                <!-- CATEGORIA SKILL -->
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <!-- AGGIUNGI O MODIFICA LE TECNOLOGIE CHE CONOSCI -->
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript (ES6+)</span>
+                        <span>React</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span>Java</span>
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>C#</span>
+                        <span>Python</span>
+                        <span>PHP</span>
+                        <span>SQL & Database</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Strumenti & Altro</h3>
+                    <div class="skill-tags">
+                        <span>Git & GitHub</span>
+                        <span>Docker</span>
+                        <span>AI Prompt Engineering</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- INFO SECTION (Education & Languages) -->
+        <section class="info-section section" id="info">
+            <div class="container">
+                <h2 class="section-title">Informazioni</h2>
+                <div class="info-grid fade-in">
+
+                    <!-- Formazione -->
+                    <div class="info-column">
+                        <h3 class="column-title">Studi</h3>
+                        <div class="education-card">
+                            <div class="education-icon"><i class="fas fa-university"></i></div>
+                            <div class="education-details">
+                                <h3>Laurea in Informatica</h3>
+                                <p class="institution">UniPG</p>
+                                <p class="year">In corso</p>
+                            </div>
+                        </div>
+                        <div class="education-card">
+                            <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="education-details">
+                                <h3>Diploma IT</h3>
+                                <p class="institution">ITTS "A. Volta", Perugia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lingue -->
+                    <div class="info-column">
+                        <h3 class="column-title">Lingue</h3>
+                        <div class="education-card"> <!-- We reuse the card style for consistency -->
+                            <div class="education-icon"><i class="fas fa-language"></i></div>
+                            <div class="education-details">
+                                <h3>Italiano</h3>
+                                <p class="institution">Madrelingua</p>
+                            </div>
+                        </div>
+                        <div class="education-card">
+                            <div class="education-icon"><i class="fas fa-globe"></i></div>
+                            <div class="education-details">
+                                <h3>Inglese</h3>
+                                <p class="institution">C1 (Comprensione/Scritto/Parlato)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Alcuni Progetti Realizzati</h2>
+
+                <div class="projects-grid">
+
+                    <!-- PROGETTO 1 -->
+                    <div class="project-card fade-in">
+                        <div class="project-image">
+                            <!-- IMMAGINE PROGETTO 1 -->
+                            <img src="src/ArpaProj.jpg" alt="Progetto 1">
+                        </div>
+                        <div class="project-content">
+                            <!-- NOME E DESCRIZIONE PROGETTO 1 -->
+                            <h3>Progetto Arpa - Fauna in città</h3>
+                            <p>Un progetto sviluppato per ARPA Umbria con l'obiettivo di sensibilizzare la cittadinanza
+                                sulla presenza e la tutela della fauna selvatica in ambienti urbani</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>Bootstrap/CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- LINK AL CODICE E ALLA LIVE DEMO -->
+                                <a href="https://github.com/sevxnteen/progettoArpa" target="_blank"><i
+                                        class="fab fa-github"></i> Codice</a>
+                                <a href="https://apps.arpa.umbria.it/faunaincitta/home.html" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i> Sito Web</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROGETTO 2 -->
+                    <div class="project-card fade-in delay-1">
+                        <div class="project-image">
+                            <!-- IMMAGINE PROGETTO 2 -->
+                            <img src="src/StProj.png" alt="Progetto 2">
+                        </div>
+                        <div class="project-content">
+                            <!-- NOME E DESCRIZIONE PROGETTO 2 -->
+                            <h3>Stranger Things RPG</h3>
+                            <p>Un progetto di gioco di ruolo basato sulla storia di Stranger Things</p>
+                            <div class="project-tech">
+                                <span>C Language</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/sevxnteen/StrangerThingsRPG" target="_blank"><i
+                                        class="fab fa-github"></i> Codice</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PUOI COPIARE E INCOLLARE UNA .project-card PER AGGIUNGERE ALTRI PROGETTI -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact section alternate-bg" id="contact">
+            <div class="container contact-container fade-in">
+                <h2 class="section-title">Mettiamoci in Contatto</h2>
+                <!-- MESSAGGIO DI CONTATTO -->
+                <p class="contact-text">
+                    Sei attualmente alla ricerca di nuove opportunità? O vuoi solo dire ciao? La mia casella di posta è
+                    sempre aperta. Farò del mio meglio per risponderti!
+                </p>
+                <!-- SOSTITUISCI CON LA TUA EMAIL -->
+                <a href="mailto:lorenzomassimo.ceccarelli@studenti.unipg.it.com"
+                    class="btn btn-primary btn-large">Mandami
+                    un'Email</a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container footer-content">
+                <div class="social-links">
+                    <!-- INSERISCI I LINK AI TUOI PROFILI SOCIAL -->
+                    <a href="https://github.com/sevxnteen" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/lorxnzoceccarelli" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; <span id="year"></span> Lorenzo Massimo Ceccarelli</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
